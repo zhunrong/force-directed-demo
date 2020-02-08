@@ -1,0 +1,28 @@
+{
+  "name": "force-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --watch",
+    "build": "webpack --mode=production --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/dat.gui": "^0.7.5",
+    "@types/gl-matrix": "^2.4.5",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.6",
+    "gl-matrix": "^3.1.0"
+  }
+}
