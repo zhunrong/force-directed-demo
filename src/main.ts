@@ -159,7 +159,7 @@ function computeForce(nodes: Node[], canvasCenter: vec2, params: IParams) {
 
     /**
      * 4.阻尼力
-     * F = V * K
+     * F = -V * K
      */
     {
       const k = params.damping
