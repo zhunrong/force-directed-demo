@@ -10,10 +10,12 @@ interface IEdgeData {
 export function createData(nodeCount: number, edgeCount: number) {
   const nodes: INodeData[] = []
   const edges: IEdgeData[] = []
+  const screenWidth = window.innerWidth
+  const screenHeight = window.innerHeight
   while (nodes.length <= nodeCount) {
     nodes.push({
-      x: randomInt(0, window.innerWidth),
-      y: randomInt(0, window.innerHeight),
+      x: randomInt(screenWidth * 0.2, screenWidth * 0.8),
+      y: randomInt(screenHeight * 0.1, screenHeight * 0.9),
       id: nodes.length
     })
   }

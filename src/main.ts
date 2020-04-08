@@ -38,10 +38,10 @@ interface IParams {
   refresh(): void
 }
 const params: IParams = {
-  elasticity: 1,
+  elasticity: 1.4,
   attractive: 0.3,
   repulsion: 30,
-  damping: 0.5,
+  damping: 0.32,
   edgeLength: 50,
   refresh() {
     const data = createData(20, 15)
